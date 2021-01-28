@@ -5,6 +5,7 @@
   --background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
   --background-card-color: #ffffff;
+  --background-hero-color: #c4c4c4;
 }
 
 h1,
@@ -59,8 +60,6 @@ body {
 }
 
 .header {
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
   border-bottom: 1px solid #ececec;
 }
 
@@ -147,7 +146,18 @@ body {
 }
 
 .section-hero {
-  background-color: var(--background-color);
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: var(--background-hero-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Hero/hero.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   max-width: 710px;
@@ -180,6 +190,7 @@ body {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
+  cursor: pointer;
 }
 /* ============= end hero =============*/
 
@@ -307,11 +318,39 @@ body {
 }
 /* ============= end our team =============*/
 
+/* ============= regular customers =============*/
+
+.section-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers-list {
+  display: flex;
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+/* ============= end regular customers =============*/
+
 /* ============= contacts info =============*/
 
 .footer .conteiner {
   display: flex;
+  align-items: center;
+}
+
+.footer-contacts {
+  display: flex;
   flex-direction: column;
+  margin-right: 70px;
 }
 
 .footer {
@@ -363,6 +402,29 @@ body {
   color: var(--secondary-color);
 }
 
+.footer-conecting {
+  display: flex;
+  flex-direction: column;
+}
+
+.conecting-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.conecting-list {
+  display: flex;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
 /* ============= end contacts info =============*/
 
 /* ============= portfolio section =============*/
@@ -403,6 +465,7 @@ body {
 .modal-btn:focus {
   color: #ffffff;
   background-color: var(--secondary-color);
+  cursor: pointer;
 }
 /* ============= end filter list =============*/
 
@@ -417,8 +480,13 @@ body {
 .portfolio-list-item {
   margin: 15px;
 }
-/* .portfolio-list-link {
-} */
+
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-list-title {
   font-weight: 700;
   font-size: 18px;
@@ -450,7 +518,6 @@ body {
   border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #eeeeee;
-  /* border: 1px solid #eeeeee; */
 }
 /* ============= end portfolio list =============*/
 
