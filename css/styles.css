@@ -372,14 +372,41 @@ body {
 .customers-list {
   display: flex;
 }
-
 .customers-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+
+.customers-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid var(--social-icon-light-color);
+  border-radius: 4px;
+  fill: var(--social-icon-light-color);
+}
+
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-item:hover,
+.customers-item:focus {
+  border-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.customers-item:hover .customers-item-pic,
+.customers-item:focus .customers-item-pic {
+  fill: var(--secondary-color);
 }
 
 /* ============= end regular customers =============*/
@@ -478,6 +505,7 @@ body {
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .social-list-link:hover,
