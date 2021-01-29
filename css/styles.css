@@ -6,6 +6,7 @@
   --secondary-background-color: #f5f4fa;
   --background-card-color: #ffffff;
   --background-hero-color: #c4c4c4;
+  --social-icon-light-color: #afb1b8;
 }
 
 h1,
@@ -89,6 +90,16 @@ body {
   color: var(--secondary-color);
 }
 
+.head-contacts:hover .icon-mail,
+.head-contacts:focus .icon-mail {
+  fill: var(--secondary-color);
+}
+
+.head-contacts:hover .icon-smartphone,
+.head-contacts:focus .icon-smartphone {
+  fill: var(--secondary-color);
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -107,7 +118,7 @@ body {
 
 .navigation-list-item:not(:last-child),
 .contacts-list-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .navigation-list-link {
@@ -121,13 +132,25 @@ body {
 }
 
 .head-contacts {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primery-text-color);
+  fill: currentColor;
+}
+
+.icon-mail {
+  display: flex;
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .current {
@@ -224,6 +247,16 @@ body {
   margin-right: 30px;
 }
 
+.info-icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: var(--secondary-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .info-item-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -314,8 +347,19 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.social-light-theme {
+  fill: var(--social-icon-light-color);
+}
+
+.team-list .social-list {
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
 }
+
 /* ============= end our team =============*/
 
 /* ============= regular customers =============*/
@@ -344,7 +388,7 @@ body {
 
 .footer .conteiner {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-contacts {
@@ -391,6 +435,7 @@ body {
 }
 
 .footer-contacts {
+  flex-shrink: 0;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -402,12 +447,12 @@ body {
   color: var(--secondary-color);
 }
 
-.footer-conecting {
+.footer-social {
   display: flex;
   flex-direction: column;
 }
 
-.conecting-title {
+.social-title {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
@@ -416,13 +461,42 @@ body {
   color: #ffffff;
 }
 
-.conecting-list {
+.social-list {
   display: flex;
+  align-items: flex-start;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--secondary-color);
 }
 
 .social-list-icon {
   width: 20px;
   height: 20px;
+}
+
+.social-dark-theme {
+  fill: #ffffff;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: #ffffff;
 }
 
 /* ============= end contacts info =============*/
