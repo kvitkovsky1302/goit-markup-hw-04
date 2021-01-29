@@ -149,7 +149,7 @@ body {
 }
 
 .icon-smartphone {
-  display: inline-block;
+  display: flex;
   margin-right: 10px;
 }
 
