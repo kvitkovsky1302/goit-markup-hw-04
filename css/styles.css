@@ -250,7 +250,8 @@ body {
 .info-icon {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background: var(--secondary-background-color);
   border-radius: 4px;
   margin-bottom: 30px;
