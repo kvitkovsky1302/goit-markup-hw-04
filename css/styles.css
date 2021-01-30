@@ -588,6 +588,7 @@ body {
 .portfolio-list-item {
   display: flex;
   margin: 15px;
+  outline: 1px solid #eeeeee;
 }
 
 .portfolio-list-link:hover,
@@ -615,8 +616,6 @@ body {
 
 .cards-title {
   padding: 20px 24px;
-
-  outline: 1px solid #eeeeee;
 
   /* border-right-width: 1px;
   border-right-style: solid;
