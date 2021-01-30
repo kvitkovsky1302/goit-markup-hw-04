@@ -616,7 +616,9 @@ body {
 .cards-title {
   padding: 20px 24px;
 
-  border-right-width: 1px;
+  outline: 1px solid #eeeeee;
+
+  /* border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #eeeeee;
 
@@ -626,7 +628,7 @@ body {
 
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #eeeeee;
+  border-left-color: #eeeeee; */
 }
 /* ============= end portfolio list =============*/
 
