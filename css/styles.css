@@ -7,6 +7,7 @@
   --background-card-color: #ffffff;
   --background-hero-color: #c4c4c4;
   --social-icon-light-color: #afb1b8;
+  --light-icon-color: #ffffff;
 }
 
 h1,
@@ -442,7 +443,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--light-icon-color);
   margin-bottom: 20px;
 }
 
@@ -459,7 +460,7 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--light-icon-color);
 }
 
 .address-map:hover,
@@ -491,7 +492,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--light-icon-color);
 }
 
 .social-list {
@@ -525,12 +526,12 @@ body {
 }
 
 .social-dark-theme {
-  fill: #ffffff;
+  fill: var(--light-icon-color);
 }
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-  fill: #ffffff;
+  fill: var(--light-icon-color);
 }
 
 /* ============= end contacts info =============*/
@@ -571,7 +572,7 @@ body {
 
 .modal-btn:hover,
 .modal-btn:focus {
-  color: #ffffff;
+  color: var(--light-icon-color);
   background-color: var(--secondary-color);
   cursor: pointer;
 }
